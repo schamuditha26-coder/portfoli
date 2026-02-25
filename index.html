@@ -1,0 +1,1001 @@
+<!-- ============================================
+   PORTFOLIO WEBSITE FOR CHAMUDITHA SHERANGA
+   Aircraft Engineer | SriLankan Airlines
+   ============================================
+   
+   SETUP INSTRUCTIONS:
+   -------------------
+   1. Create a new folder for the project
+   2. Save this file as 'index.html' in the root
+   3. Create 'styles.css' and 'script.js' files in the same folder
+   4. Create an 'assets' folder for images
+   5. Add your images: profile.jpg, hero-bg.jpg, project-1.jpg, etc.
+   6. Open index.html in any modern browser
+   
+   CUSTOMIZATION:
+   --------------
+   - Edit text content directly in the HTML sections
+   - Change colors in CSS :root variables
+   - Replace placeholder images in assets/ folder
+   - Update social links in the footer
+   - Modify skills in the Skills section grid
+   ============================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamuditha Sheranga - Aircraft Engineer at SriLankan Airlines. Specializing in aviation maintenance, safety compliance, and precision engineering.">
+    <meta name="keywords" content="Aircraft Engineer, Aviation, SriLankan Airlines, Maintenance, Safety, Engineering">
+    <meta name="author" content="Chamuditha Sheranga">
+    
+    <title>Chamuditha Sheranga | Aircraft Engineer</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <span class="logo-icon">✈</span>
+                <span class="logo-text">CS</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certifications</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="badge-icon">✈</span>
+                <span>Aircraft Engineer</span>
+            </div>
+            
+            <h1 class="hero-title fade-in">
+                <span class="title-greeting">Hello, I'm</span>
+                <span class="title-name">Chamuditha Sheranga</span>
+            </h1>
+            
+            <p class="hero-subtitle fade-in">
+                Ensuring aviation excellence through precision maintenance, 
+                rigorous safety standards, and unwavering commitment to airworthiness 
+                at SriLankan Airlines.
+            </p>
+            
+            <div class="hero-cta fade-in">
+                <a href="assets/cv.pdf" class="btn btn-primary" download>
+                    <span class="btn-icon">↓</span>
+                    Download CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span class="btn-icon">✉</span>
+                    Contact Me
+                </a>
+            </div>
+            
+            <div class="hero-stats fade-in">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Flight Hours Maintained</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Safety Record</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Precision in Every Detail</h2>
+                <p class="section-subtitle">Dedicated to maintaining the highest standards of aviation safety</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image slide-up">
+                    <div class="image-frame">
+                        <img src="assets/profile.jpg" alt="Chamuditha Sheranga - Aircraft Engineer" loading="lazy">
+                        <div class="image-accent"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                
+                <div class="about-content slide-up">
+                    <h3 class="about-heading">Committed to Aviation Safety & Engineering Excellence</h3>
+                    
+                    <p class="about-text">
+                        As a licensed Aircraft Engineer at SriLankan Airlines, I bring a meticulous approach to 
+                        aircraft maintenance and airworthiness management. My expertise spans across line maintenance, 
+                        base maintenance, and component overhaul operations for Airbus A320/A330 and A350 fleets.
+                    </p>
+                    
+                    <p class="about-text">
+                        I believe that every bolt tightened, every system checked, and every inspection completed 
+                        contributes to the safety of thousands of passengers. This responsibility drives my commitment 
+                        to continuous learning, strict adherence to regulatory standards, and collaborative teamwork 
+                        with pilots, ground crew, and engineering teams.
+                    </p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🛡️</div>
+                            <h4>Safety First</h4>
+                            <p>Uncompromising commitment to safety protocols and regulatory compliance</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🔧</div>
+                            <h4>Precision Engineering</h4>
+                            <p>Meticulous attention to detail in every maintenance task</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">📋</div>
+                            <h4>Documentation</h4>
+                            <p>Thorough record-keeping ensuring full traceability</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Current Role</span>
+                            <span class="info-value">Aircraft Engineer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Company</span>
+                            <span class="info-value">SriLankan Airlines</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Katunayake, Sri Lanka</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Specialization</span>
+                            <span class="info-value">Airbus A320/A330 Family</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-alt">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical Proficiency</h2>
+                <p class="section-subtitle">Core competencies in aircraft maintenance and engineering</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skills-category slide-up">
+                    <h3 class="category-title">
+                        <span class="category-icon">🔧</span>
+                        Technical Skills
+                    </h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Aircraft Maintenance (Line & Base)</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Troubleshooting & Diagnostics</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Component Inspection & Repair</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Avionics Systems</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Compliance & Safety -->
+                <div class="skills-category slide-up">
+                    <h3 class="category-title">
+                        <span class="category-icon">🛡️</span>
+                        Compliance & Safety
+                    </h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">EASA & CAASL Regulations</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Safety Management Systems (SMS)</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Quality Assurance</span>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="87"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Human Factors in Aviation</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Skills -->
+                <div class="skills-category slide-up">
+                    <h3 class="category-title">
+                        <span class="category-icon">👥</span>
+                        Professional Skills
+                    </h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Technical Documentation</span>
+                            <span class="skill-percent">93%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="93"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Team Leadership</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Cross-functional Collaboration</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Continuous Improvement</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Aircraft Types -->
+                <div class="skills-category slide-up">
+                    <h3 class="category-title">
+                        <span class="category-icon">✈️</span>
+                        Aircraft Types
+                    </h3>
+                    
+                    <div class="aircraft-tags">
+                        <span class="aircraft-tag expert">Airbus A320</span>
+                        <span class="aircraft-tag expert">Airbus A321</span>
+                        <span class="aircraft-tag expert">Airbus A330</span>
+                        <span class="aircraft-tag proficient">Airbus A350</span>
+                        <span class="aircraft-tag familiar">ATR 72-600</span>
+                    </div>
+                    
+                    <div class="maintenance-types">
+                        <h4>Maintenance Capabilities:</h4>
+                        <ul class="capability-list">
+                            <li>A-Checks & C-Checks</li>
+                            <li>Engine Changes (CFM56, PW4000, Trent 700)</li>
+                            <li>Landing Gear Overhaul</li>
+                            <li>Cabin Systems & IFE</li>
+                            <li>Structural Repairs</li>
+                            <li>NDT Inspections</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="section-tag">Career Path</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Building expertise in aviation maintenance and engineering</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Current Position -->
+                <div class="timeline-item slide-up">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2021 - Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3 class="timeline-title">Licensed Aircraft Engineer (B1/B2)</h3>
+                        <h4 class="timeline-company">SriLankan Airlines</h4>
+                        <p class="timeline-location">Bandaranaike International Airport, Katunayake</p>
+                        
+                        <ul class="timeline-duties">
+                            <li>Perform scheduled and unscheduled maintenance on Airbus A320/A330/A350 fleet</li>
+                            <li>Certify airworthiness releases in compliance with EASA Part-66 and CAASL regulations</li>
+                            <li>Lead troubleshooting teams for complex system malfunctions and AOG situations</li>
+                            <li>Conduct borescope inspections and engine performance monitoring</li>
+                            <li> Mentor junior technicians and trainees in maintenance procedures</li>
+                            <li>Implement reliability monitoring programs and defect trend analysis</li>
+                        </ul>
+                        
+                        <div class="timeline-tags">
+                            <span class="tag">Airbus A320</span>
+                            <span class="tag">Airbus A330</span>
+                            <span class="tag">EASA Part-66</span>
+                            <span class="tag">Line Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Previous Position -->
+                <div class="timeline-item slide-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2019 - 2021</span>
+                        </div>
+                        <h3 class="timeline-title">Aircraft Technician</h3>
+                        <h4 class="timeline-company">SriLankan Airlines</h4>
+                        <p class="timeline-location">Bandaranaike International Airport, Katunayake</p>
+                        
+                        <ul class="timeline-duties">
+                            <li>Assisted in C-check maintenance activities and component replacements</li>
+                            <li>Performed routine inspections and servicing of aircraft systems</li>
+                            <li>Maintained accurate maintenance logs and technical records</li>
+                            <li>Supported hangar maintenance operations during heavy checks</li>
+                            <li>Participated in safety audits and quality inspections</li>
+                        </ul>
+                        
+                        <div class="timeline-tags">
+                            <span class="tag">Base Maintenance</span>
+                            <span class="tag">Component Overhaul</span>
+                            <span class="tag">Technical Records</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Training Period -->
+                <div class="timeline-item slide-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2018 - 2019</span>
+                        </div>
+                        <h3 class="timeline-title">Trainee Aircraft Maintenance Engineer</h3>
+                        <h4 class="timeline-company">SriLankan Airlines Engineering</h4>
+                        <p class="timeline-location">Katunayake, Sri Lanka</p>
+                        
+                        <ul class="timeline-duties">
+                            <li>Completed comprehensive training in aircraft systems and maintenance procedures</li>
+                            <li>Gained hands-on experience in avionics, airframe, and powerplant systems</li>
+                            <li>Studied regulatory requirements and safety management systems</li>
+                            <li>Assisted senior engineers in daily maintenance operations</li>
+                        </ul>
+                        
+                        <div class="timeline-tags">
+                            <span class="tag">Training</span>
+                            <span class="tag">OJT</span>
+                            <span class="tag">Type Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding bg-alt">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Key Projects & Initiatives</h2>
+                <p class="section-subtitle">Contributions to maintenance efficiency and safety improvements</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card slide-up">
+                    <div class="project-image">
+                        <img src="assets/project-1.jpg" alt="Digital Maintenance Log System" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-category">Process Improvement</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Maintenance Log System</h3>
+                        <p class="project-description">
+                            Led the transition from paper-based to digital maintenance logs, 
+                            reducing documentation errors by 40% and improving traceability 
+                            of maintenance actions across the fleet.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Implemented tablet-based data entry for line maintenance</li>
+                            <li>Integrated with existing AMOS MRO system</li>
+                            <li>Reduced paperwork processing time by 60%</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-year">2023</span>
+                            <div class="project-tags">
+                                <span class="tag-small">Digitalization</span>
+                                <span class="tag-small">Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="project-card slide-up">
+                    <div class="project-image">
+                        <img src="assets/project-2.jpg" alt="Component Inspection Checklist" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-category">Safety Enhancement</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Component Inspection Checklist Optimization</h3>
+                        <p class="project-description">
+                            Redesigned critical component inspection checklists based on 
+                            reliability data analysis, enhancing detection of potential 
+                            failures before they affect airworthiness.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Analyzed 2+ years of defect data</li>
+                            <li>Developed risk-based inspection intervals</li>
+                            <li>Implemented across A320 fleet</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-year">2022</span>
+                            <div class="project-tags">
+                                <span class="tag-small">Safety</span>
+                                <span class="tag-small">Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="project-card slide-up">
+                    <div class="project-image">
+                        <img src="assets/project-3.jpg" alt="Tool Control System" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-category">Quality Assurance</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RFID Tool Control System Implementation</h3>
+                        <p class="project-description">
+                            Spearheaded the implementation of RFID-based tool control 
+                            system in hangar operations, eliminating Foreign Object Debris (FOD) 
+                            incidents related to misplaced tools.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Zero FOD incidents since implementation</li>
+                            <li>Reduced tool search time by 75%</li>
+                            <li>Automated calibration tracking</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-year">2022</span>
+                            <div class="project-tags">
+                                <span class="tag-small">FOD Prevention</span>
+                                <span class="tag-small">Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="project-card slide-up">
+                    <div class="project-image">
+                        <img src="assets/project-4.jpg" alt="Engine Health Monitoring" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-category">Predictive Maintenance</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Engine Health Monitoring Dashboard</h3>
+                        <p class="project-description">
+                            Developed a real-time dashboard for monitoring engine parameters 
+                            and trends, enabling predictive maintenance and reducing 
+                            unscheduled engine removals.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Real-time data from ACARS and QAR</li>
+                            <li>Automated alert system for parameter exceedances</li>
+                            <li>Predicted 3 potential failures before occurrence</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-year">2023</span>
+                            <div class="project-tags">
+                                <span class="tag-small">Analytics</span>
+                                <span class="tag-small">Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 5 -->
+                <article class="project-card slide-up">
+                    <div class="project-image">
+                        <img src="assets/project-5.jpg" alt="Training Program" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-category">Training Development</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Practical Training Program for New Recruits</h3>
+                        <p class="project-description">
+                            Designed and implemented a structured practical training program 
+                            for new technician recruits, accelerating their competency 
+                            development and OJT completion.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Reduced training time by 30%</li>
+                            <li>Standardized practical assessments</li>
+                            <li>Improved trainee retention rate</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-year">2021</span>
+                            <div class="project-tags">
+                                <span class="tag-small">Training</span>
+                                <span class="tag-small">Mentoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 6 -->
+                <article class="project-card slide-up">
+                    <div class="project-image">
+                        <img src="assets/project-6.jpg" alt="Sustainability Initiative" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-category">Sustainability</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sustainable Maintenance Practices Initiative</h3>
+                        <p class="project-description">
+                            Championed green maintenance practices including waste reduction, 
+                            recycling programs for aircraft materials, and energy-efficient 
+                            hangar operations.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Reduced hazardous waste by 25%</li>
+                            <li>Implemented solvent recycling system</li>
+                            <li>Earned airline sustainability recognition</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-year">2023</span>
+                            <div class="project-tags">
+                                <span class="tag-small">Green Aviation</span>
+                                <span class="tag-small">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section-padding">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="section-tag">Qualifications</span>
+                <h2 class="section-title">Licenses & Certifications</h2>
+                <p class="section-subtitle">Professional credentials and continuous learning</p>
+            </div>
+            
+            <div class="cert-grid">
+                <!-- EASA License -->
+                <div class="cert-card slide-up">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">EASA Part-66 Aircraft Maintenance License</h3>
+                        <p class="cert-issuer">European Union Aviation Safety Agency</p>
+                        <div class="cert-details">
+                            <span class="cert-category">B1.1 - Turbine Aeroplanes</span>
+                            <span class="cert-category">B2 - Avionics</span>
+                        </div>
+                        <p class="cert-validity">Valid • License No: XXXXXX</p>
+                    </div>
+                </div>
+                
+                <!-- CAASL License -->
+                <div class="cert-card slide-up">
+                    <div class="cert-icon">🇱🇰</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">CAASL Aircraft Maintenance Engineer License</h3>
+                        <p class="cert-issuer">Civil Aviation Authority of Sri Lanka</p>
+                        <div class="cert-details">
+                            <span class="cert-category">Cat B1 - Mechanical</span>
+                            <span class="cert-category">Cat B2 - Avionics</span>
+                        </div>
+                        <p class="cert-validity">Valid • License No: XXXXXX</p>
+                    </div>
+                </div>
+                
+                <!-- Type Ratings -->
+                <div class="cert-card slide-up">
+                    <div class="cert-icon">✈️</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Airbus Type Ratings</h3>
+                        <p class="cert-issuer">Airbus Training Center</p>
+                        <div class="cert-details">
+                            <span class="cert-category">A320 Family (CFM56 & V2500)</span>
+                            <span class="cert-category">A330 (Trent 700)</span>
+                            <span class="cert-category">A350 (Trent XWB)</span>
+                        </div>
+                        <p class="cert-validity">Current • Recurrent training annually</p>
+                    </div>
+                </div>
+                
+                <!-- Human Factors -->
+                <div class="cert-card slide-up">
+                    <div class="cert-icon">🧠</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Human Factors in Aviation Maintenance</h3>
+                        <p class="cert-issuer">EASA Approved Training Organization</p>
+                        <div class="cert-details">
+                            <span class="cert-category">Initial & Recurrent</span>
+                            <span class="cert-category">Error Management</span>
+                        </div>
+                        <p class="cert-validity">Completed 2024 • Valid for 24 months</p>
+                    </div>
+                </div>
+                
+                <!-- Safety Management -->
+                <div class="cert-card slide-up">
+                    <div class="cert-icon">🛡️</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Safety Management Systems (SMS)</h3>
+                        <p class="cert-issuer">ICAO & CAASL Approved</p>
+                        <div class="cert-details">
+                            <span class="cert-category">Safety Risk Management</span>
+                            <span class="cert-category">Incident Investigation</span>
+                        </div>
+                        <p class="cert-validity">Completed 2023 • Valid for 36 months</p>
+                    </div>
+                </div>
+                
+                <!-- NDT -->
+                <div class="cert-card slide-up">
+                    <div class="cert-icon">🔍</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">NDT Level II Certifications</h3>
+                        <p class="cert-issuer">ASNT / PCN Approved</p>
+                        <div class="cert-details">
+                            <span class="cert-category">Penetrant Testing (PT)</span>
+                            <span class="cert-category">Magnetic Particle (MT)</span>
+                            <span class="cert-category">Eddy Current (ET)</span>
+                        </div>
+                        <p class="cert-validity">Current • Recertified 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="training-section slide-up">
+                <h3 class="training-title">Additional Training & Workshops</h3>
+                <div class="training-grid">
+                    <div class="training-item">
+                        <span class="training-year">2024</span>
+                        <span class="training-name">Fuel Tank Safety (CDCCL)</span>
+                    </div>
+                    <div class="training-item">
+                        <span class="training-year">2023</span>
+                        <span class="training-name">Electrical Wiring Interconnection System (EWIS)</span>
+                    </div>
+                    <div class="training-item">
+                        <span class="training-year">2023</span>
+                        <span class="training-name">Corrosion Prevention & Control</span>
+                    </div>
+                    <div class="training-item">
+                        <span class="training-year">2022</span>
+                        <span class="training-name">Composite Structure Repairs</span>
+                    </div>
+                    <div class="training-item">
+                        <span class="training-year">2022</span>
+                        <span class="training-name">Engine Condition Monitoring</span>
+                    </div>
+                    <div class="training-item">
+                        <span class="training-year">2021</span>
+                        <span class="training-name">Dangerous Goods Handling (CAT 8)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-alt">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Open to collaboration and professional opportunities</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info slide-up">
+                    <h3 class="contact-heading">Contact Information</h3>
+                    <p class="contact-text">
+                        Whether you're interested in discussing aviation maintenance, 
+                        potential collaborations, or professional opportunities, 
+                        I'd love to hear from you.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <a href="mailto:chamuditha.sheranga@email.com" class="method-value">chamuditha.sheranga@email.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <span class="method-label">Phone</span>
+                                <a href="tel:+94771234567" class="method-value">+94 77 123 4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Katunayake, Sri Lanka</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div class="method-details">
+                                <span class="method-label">Current Role</span>
+                                <span class="method-value">Aircraft Engineer at SriLankan Airlines</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability">
+                        <h4>Availability</h4>
+                        <p>Available for consultation, mentoring, and aviation industry discussions.</p>
+                        <div class="availability-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Open to opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container slide-up">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="John Doe"
+                                required
+                                aria-required="true"
+                                aria-describedby="name-error"
+                            >
+                            <span class="error-message" id="name-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="john@example.com"
+                                required
+                                aria-required="true"
+                                aria-describedby="email-error"
+                            >
+                            <span class="error-message" id="email-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input" 
+                                placeholder="How can I help you?"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea" 
+                                rows="5" 
+                                placeholder="Your message here..."
+                                required
+                                aria-required="true"
+                                aria-describedby="message-error"
+                            ></textarea>
+                            <span class="error-message" id="message-error" role="alert"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" hidden></span>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess" role="status" hidden>
+                            <div class="success-icon">✓</div>
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">✈</span>
+                        <span>Chamuditha Sheranga</span>
+                    </a>
+                    <p class="footer-tagline">Aircraft Engineer | Safety Advocate | Aviation Professional</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/chamudithasheranga" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://github.com/chamudithasheranga" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="mailto:chamuditha.sheranga@email.com" class="social-link" aria-label="Send Email">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="currentYear">2024</span> Chamuditha Sheranga. All rights reserved.</p>
+                <p class="footer-note">Designed with precision, built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
